@@ -3,7 +3,26 @@ entries:
   wireguard-centos-8-stream:
   - apiVersion: v1
     appVersion: v1.0.20210914
-    created: "2022-01-08T19:48:28.96230583-07:00"
+    created: "2022-01-08T23:36:13.562666079-07:00"
+    description: Wireguard for use with centos-8-stream
+    digest: 1e59d8362e179e6699aa4e63bd03f1d79aa30cfb0b5aa09f2da9671d098deab4
+    home: https://www.wireguard.com/
+    icon: https://www.wireguard.com/img/wireguard.svg
+    keywords:
+    - wireguard
+    maintainers:
+    - name: lknite
+    name: wireguard-centos-8-stream
+    sources:
+    - https://github.com/lknite/lknite-helm-charts/wireguard-centos-8-stream
+    - https://quay.io/repository/lknight/docker-wireguard-centos-8-stream
+    - https://github.com/linuxserver/docker-wireguard
+    urls:
+    - https://lknite.github.io/lknite-helm-charts/wireguard-centos-8-stream-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v1
+    appVersion: v1.0.20210914
+    created: "2022-01-08T23:36:13.562398573-07:00"
     description: Wireguard for use with centos-8-stream
     digest: ea37a1e3f4d347c0fe69180f6f8d76a84dce5a843f576467a371ac8e2f5f8783
     home: https://www.wireguard.com/
@@ -22,7 +41,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: v1.0.20210914
-    created: "2022-01-08T19:48:28.962027124-07:00"
+    created: "2022-01-08T23:36:13.562090966-07:00"
     description: Wireguard for use with centos-8-stream
     digest: 82733860539e038a0dfef010788c530d4db79c9235acab29c9aeffa0212ffc7e
     home: https://www.wireguard.com/
@@ -41,7 +60,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: v1.0.20210914
-    created: "2022-01-08T19:48:28.961764118-07:00"
+    created: "2022-01-08T23:36:13.56180706-07:00"
     description: Wireguard for use with centos-8-stream
     digest: 81703a19fd10420ef2c5f76210fd36762acb3ef9ac1d76d398fd25dc3efd240e
     home: https://www.wireguard.com/
@@ -58,4 +77,4 @@ entries:
     urls:
     - https://lknite.github.io/lknite-helm-charts/wireguard-centos-8-stream-0.0.1.tgz
     version: 0.0.1
-generated: "2022-01-08T19:48:28.961362809-07:00"
+generated: "2022-01-08T23:36:13.561343349-07:00"

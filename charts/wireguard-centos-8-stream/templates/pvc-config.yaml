@@ -9,4 +9,6 @@ spec:
   resources:
     requests:
       storage: 100Mi
+  {{ if ne (lower .Values.pvc.storageClassName) "default" }}
   storageClassName: "{{ .Values.pvc.storageClassName }}"
+  {{- end }}
