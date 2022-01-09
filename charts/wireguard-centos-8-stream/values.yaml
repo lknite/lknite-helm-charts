@@ -9,7 +9,7 @@ env:
   peerdns: "auto"
 
 pvc:
-  storageClassName: 'default'
+  storageClassName: "default"
 
 serverPort: 51820
 #nodeName:
