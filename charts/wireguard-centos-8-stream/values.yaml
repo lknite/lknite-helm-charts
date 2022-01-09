@@ -9,7 +9,7 @@ env:
   peerdns: "auto"
 
 pvc:
-  storageClassName: 'longhorn-slow'
+  storageClassName: 'default'
 
 serverPort: 51820
 #nodeName:
