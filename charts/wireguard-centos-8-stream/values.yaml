@@ -8,8 +8,8 @@ env:
   peers: "1"
   peerdns: "auto"
 
-#pvc:
-#  storageClassName: managed-nfs-storage-fast
+pvc:
+  storageClassName: "default"
 
 serverPort: 51820
 #nodeName:
