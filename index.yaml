@@ -1,0 +1,61 @@
+apiVersion: v1
+entries:
+  wireguard-centos-8-stream:
+  - apiVersion: v1
+    appVersion: v1.0.20210914
+    created: "2022-01-08T18:32:00.224144498-07:00"
+    description: Wireguard for use with centos-8-stream
+    digest: 250be106875ebd996ac8d993be71d412ec676899b7e2c8d9eb346a135b47934c
+    home: https://www.wireguard.com/
+    icon: https://www.wireguard.com/img/wireguard.svg
+    keywords:
+    - wireguard
+    maintainers:
+    - name: lknite
+    name: wireguard-centos-8-stream
+    sources:
+    - https://github.com/lknite/lknite-helm-charts/wireguard-centos-8-stream
+    - https://quay.io/repository/lknight/docker-wireguard-centos-8-stream
+    - https://github.com/linuxserver/docker-wireguard
+    urls:
+    - https://lknite.github.io/lknite-helm-charts/wireguard-centos-8-stream-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v1
+    appVersion: v1.0.20210914
+    created: "2022-01-08T18:32:00.223868892-07:00"
+    description: Wireguard for use with centos-8-stream
+    digest: 82733860539e038a0dfef010788c530d4db79c9235acab29c9aeffa0212ffc7e
+    home: https://www.wireguard.com/
+    icon: https://www.wireguard.com/img/wireguard.svg
+    keywords:
+    - wireguard
+    maintainers:
+    - name: lknight-gh
+    name: wireguard-centos-8-stream
+    sources:
+    - https://github.com/lknight-gh/helm-charts/wireguard-centos-8-stream
+    - https://quay.io/repository/lknight/docker-wireguard-centos-8-stream
+    - https://github.com/linuxserver/docker-wireguard
+    urls:
+    - https://lknite.github.io/lknite-helm-charts/wireguard-centos-8-stream-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v1
+    appVersion: v1.0.20210914
+    created: "2022-01-08T18:32:00.223582286-07:00"
+    description: Wireguard for use with centos-8-stream
+    digest: 81703a19fd10420ef2c5f76210fd36762acb3ef9ac1d76d398fd25dc3efd240e
+    home: https://www.wireguard.com/
+    icon: https://www.wireguard.com/img/wireguard.svg
+    keywords:
+    - wireguard
+    maintainers:
+    - name: lknight-gh
+    name: wireguard-centos-8-stream
+    sources:
+    - https://github.com/lknight-gh/helm-charts/wireguard-centos-8-stream
+    - https://quay.io/repository/lknight/docker-wireguard-centos-8-stream
+    - https://github.com/linuxserver/docker-wireguard
+    urls:
+    - https://lknite.github.io/lknite-helm-charts/wireguard-centos-8-stream-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-01-08T18:32:00.223160576-07:00"

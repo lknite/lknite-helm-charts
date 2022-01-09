@@ -1,0 +1,5 @@
+#!/bin/bash
+
+helm package charts/wireguard-centos-8-stream
+
+helm repo index --url https://lknite.github.io/lknite-helm-charts .

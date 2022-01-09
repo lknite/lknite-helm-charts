@@ -1,0 +1,15 @@
+apiVersion: v1
+appVersion: v1.0.20210914
+description: Wireguard for use with centos-8-stream
+name: wireguard-centos-8-stream
+version: 0.0.3
+keywords:
+  - wireguard
+home: https://www.wireguard.com/
+icon: https://www.wireguard.com/img/wireguard.svg
+sources:
+  - https://github.com/lknite/lknite-helm-charts/wireguard-centos-8-stream
+  - https://quay.io/repository/lknight/docker-wireguard-centos-8-stream
+  - https://github.com/linuxserver/docker-wireguard
+maintainers:
+  - name: lknite

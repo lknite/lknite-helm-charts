@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: wireguard
+  name: wireguard
+  namespace: wireguard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wireguard
+  template:
+    metadata:
+      labels:
+        app: wireguard
+    spec:
+      {{- if .Values.nodeName }}
+      nodeName: {{ .Values.nodeName }}
+      {{- end }}
+      containers:
+      - name: wireguard-centos-8-stream
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env:
+        - name: PUID
+          value: "1000"
+        - name: PGID
+          value: "1000"
+        - name: TZ
+          value: "{{ .Values.env.timezone }}"
+        - name: PEERS
+          value: "{{ .Values.env.peers }}"
+        - name: PEERDNS
+          value: "{{ .Values.env.peerdns }}"
+        - name: SERVERPORT
+          value: "{{ .Values.serverPort }}"
+        #- SERVERURL=wireguard.domain.com #optional
+        #- PEERS=1 #required for server mode, optional for client mode
+        #- PEERDNS=auto #optional
+        #- INTERNAL_SUBNET=10.13.13.0 #optional
+        #- ALLOWEDIPS=0.0.0.0/0
+        startupProbe:
+          exec:
+            command:
+            - sh
+            - -c
+            - which wg
+          periodSeconds: 10
+          failureThreshold: 60
+        readinessProbe:
+          exec:
+            command:
+            - sh
+            - -c
+            - wg show | grep wg0
+          periodSeconds: 10
+          failureThreshold: 60
+        securityContext:
+          privileged: true
+          capabilities:
+            add: ["NET_ADMIN", "SYS_MODULE"]
+        volumeMounts:
+        - mountPath: "/config"
+          name: config
+        - mountPath: "/lib/modules"
+          name: modules
+      volumes:
+      - name: config
+        persistentVolumeClaim:
+          claimName: wireguard-config
+      - name: modules
+        persistentVolumeClaim:
+          claimName: wireguard-modules

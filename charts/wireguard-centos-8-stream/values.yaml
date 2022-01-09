@@ -1,0 +1,15 @@
+image:
+  repository: quay.io/lknight/docker-wireguard-centos-8-stream
+  tag: latest
+  pullPolicy: Always
+
+env:
+  timezone: "America/Denver"
+  peers: "1"
+  peerdns: "auto"
+
+#pvc:
+#  storageClassName: managed-nfs-storage-fast
+
+serverPort: 51820
+#nodeName:
