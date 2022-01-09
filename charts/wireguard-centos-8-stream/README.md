@@ -1,6 +1,6 @@
 A wireguard container built for centos-8-stream which takes advantage of the scripts from the linuxserver docker-wireguard project.
 
-Source: https://github.com/lknite/docker-wireguard-centos-8-stream
+Source: https://github.com/lknite/lknite-docker-wireguard-centos-8-stream
 
 LinuxServer docker-wireguard project: https://github.com/linuxserver/docker-wireguard
 
