@@ -2,7 +2,7 @@ apiVersion: v1
 appVersion: v1.0.20210914
 description: Wireguard for use with centos-8-stream
 name: wireguard-centos-8-stream
-version: 0.0.4
+version: 0.0.5
 keywords:
   - wireguard
 home: https://www.wireguard.com/
