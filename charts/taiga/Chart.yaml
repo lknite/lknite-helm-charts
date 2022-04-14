@@ -1,0 +1,9 @@
+apiVersion: v2
+name: taiga
+description: A Helm chart for Taiga
+type: application
+version: 1.0.0
+appVersion: 1.0.0
+maintainers:
+- name: Travis Loyd
+  email: lknite@aarr.xyz
