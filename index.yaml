@@ -3,7 +3,7 @@ entries:
   kube-xcpng-csi:
   - apiVersion: v2
     appVersion: 3.1.5
-    created: "2022-06-04T20:22:12.173541874-06:00"
+    created: "2022-11-12T18:59:20.475317644-05:00"
     description: A Helm chart for Kubernetes
     digest: 259dc8b4969237adb4a969a2cceb735ec5b385b51587a4266014ed30014acd45
     name: kube-xcpng-csi
@@ -14,7 +14,7 @@ entries:
   taiga:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-06-04T20:22:12.174809804-06:00"
+    created: "2022-11-12T18:59:20.477071565-05:00"
     description: A Helm chart for Taiga
     digest: 4007d0ede1c0f64268e066c5cf9c098e8fbd1f20343c2fea39651172cc567d07
     maintainers:
@@ -28,7 +28,26 @@ entries:
   wireguard-centos-8-stream:
   - apiVersion: v1
     appVersion: v1.0.20210914
-    created: "2022-06-04T20:22:12.175812128-06:00"
+    created: "2022-11-12T18:59:20.478398901-05:00"
+    description: Wireguard for use with centos-8-stream
+    digest: 53a3d79696b6eddc4a20c54de473eca6743293dc22eb72ddc2a70a05c7d0b5b3
+    home: https://www.wireguard.com/
+    icon: https://www.wireguard.com/img/wireguard.svg
+    keywords:
+    - wireguard
+    maintainers:
+    - name: lknite
+    name: wireguard-centos-8-stream
+    sources:
+    - https://github.com/lknite/lknite-helm-charts/wireguard-centos-8-stream
+    - https://quay.io/repository/lknight/docker-wireguard-centos-8-stream
+    - https://github.com/linuxserver/docker-wireguard
+    urls:
+    - https://lknite.github.io/lknite-helm-charts/wireguard-centos-8-stream-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v1
+    appVersion: v1.0.20210914
+    created: "2022-11-12T18:59:20.478144178-05:00"
     description: Wireguard for use with centos-8-stream
     digest: 5cb5b30b0c0038654da6b9cabf6121aec23abe06359a402d5aa25aa0f709146f
     home: https://www.wireguard.com/
@@ -47,7 +66,7 @@ entries:
     version: 0.0.5
   - apiVersion: v1
     appVersion: v1.0.20210914
-    created: "2022-06-04T20:22:12.175549722-06:00"
+    created: "2022-11-12T18:59:20.477905575-05:00"
     description: Wireguard for use with centos-8-stream
     digest: ea37a1e3f4d347c0fe69180f6f8d76a84dce5a843f576467a371ac8e2f5f8783
     home: https://www.wireguard.com/
@@ -66,7 +85,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: v1.0.20210914
-    created: "2022-06-04T20:22:12.175315916-06:00"
+    created: "2022-11-12T18:59:20.477671442-05:00"
     description: Wireguard for use with centos-8-stream
     digest: 82733860539e038a0dfef010788c530d4db79c9235acab29c9aeffa0212ffc7e
     home: https://www.wireguard.com/
@@ -85,7 +104,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: v1.0.20210914
-    created: "2022-06-04T20:22:12.17506561-06:00"
+    created: "2022-11-12T18:59:20.477345809-05:00"
     description: Wireguard for use with centos-8-stream
     digest: 81703a19fd10420ef2c5f76210fd36762acb3ef9ac1d76d398fd25dc3efd240e
     home: https://www.wireguard.com/
@@ -102,4 +121,4 @@ entries:
     urls:
     - https://lknite.github.io/lknite-helm-charts/wireguard-centos-8-stream-0.0.1.tgz
     version: 0.0.1
-generated: "2022-06-04T20:22:12.173167265-06:00"
+generated: "2022-11-12T18:59:20.474550986-05:00"
