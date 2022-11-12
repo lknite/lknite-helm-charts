@@ -65,6 +65,12 @@ spec:
           name: config
         - mountPath: "/lib/modules"
           name: modules
+      initContainers:
+      - name: init-myservice
+        image: busybox:1.28
+        command: ['sh', '-c', "sysctl net.ipv4.ip_forward=1"]
+        securityContext:
+          privileged: true
       volumes:
       - name: config
         persistentVolumeClaim:
