@@ -3,6 +3,14 @@ image:
   tag: latest
   pullPolicy: Always
 
+resources:
+  requests:
+    memory: "50Mi"
+    cpu: "10m"
+  limits:
+    memory: "100Mi"
+    cpu: "20m"
+
 env:
   timezone: "America/Denver"
   peers: "1"
